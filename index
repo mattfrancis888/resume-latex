@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    %   \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Matthew Francis} \\ \vspace{1pt}
+    \href{https://mattfrancis.vercel.app/}{\textbf {\underline{Portfolio}}} $|$
+    \small 289-772-7465 $|$
+    \href{mailto:mattfrancis888@gmail.com}{\textbf {\underline{mattfrancis888@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/matthew-francis-b9b1b31a2/}{\textbf{\underline{LinkedIn}}} $|$
+    \href{https://github.com/mattfrancis888}{\textbf{\underline{Github}}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Science, Computer Science,  Wilfrid Laurier University (CS GPA: 3.9/4 ) }{Waterloo, ON}
+   
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.starty.ca/}{\underline{Starty}} $|$ Waterloo, ON -- Founder \& Full-Stack Software Developer}{Aug 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Collaborated with team for ideas, business plan, marketing plan, and engineering to create a platform for people to collaborate with \fontseries{b}\selectfont {GitHub Actions, Next.js, React-Spring, Typescript, HTML, SCSS, BEM. CSS, JS, Express.js, PostgreSQL, Liquibase, Figma, Lighthouse, axe.} }
+        \resumeItem{Collaborated with mentors in accelerator to challenge decisions, address market research and pivot on ideas. }
+        \resumeItem{Used \textbf{Git and GitHub Actions} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Habanero $|$ Toronto, ON -- Frontend Software Developer}{Sep. 2018 -- Present}
+    
+      \resumeItemListStart
+        \resumeItem{Collaborated with design, operations and engineering team to develop a web application for over a dozen of clients with \fontseries{b}\selectfont {Azure DevOps, React, React-Spring, Typescript, HTML, SCSS, BEM, CSS, JS, Figma, Lighthouse, axe.} }
+        \resumeItem{Involved in agile methodology that included biweekly scrum, backlog refinement, check-ins, QA, and retrospective.}
+        \resumeItem{Used \textbf{Git and Azure} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Badal $|$ Toronto, ON -- Full-Stack Software Developer}{May 2021 -- Sep 2021}
+     
+      \resumeItemListStart
+        \resumeItem{Collaborated with design, operations and engineering team to develop a Shopify application that automates sales for Shopify stores with over hundreds of products and users with \fontseries{b}\selectfont { GitLab, React, Redux, Typescript, PostgreSQL, GraphQL, Express.js, Docker, HTML, SCSS, BEM, CSS, JS, Lighthouse, axe.} }
+        \resumeItem{Involved in agile methodology that included biweekly sprints, backlog refinement and daily stand-ups. }
+        \resumeItem{Used \textbf{Git and Gitlab} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Laurier Computer Science Club $|$  Waterloo, ON -- Lead Software Developer}{Sep 2020 -- May 2021}
+
+      \resumeItemListStart
+        \resumeItem{Led 15 team members in designing and engineering a web application for the club with  \fontseries{b}\selectfont {React, HTML, SCSS, CSS, JS, Figma.}  }
+        \resumeItem{Held weekly meetings to explain technology stack and version control with \textbf{Git}; used agile methodology that included biweekly sprints and backlog refinement; used \textbf{Git and GitHub Actions} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+    \resumeItemListEnd      
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ \href{https://steam-project-matt.herokuapp.com/}{\underline{Steam}}} $-$ \fontseries{b}\selectfont{React, Redux, Typescript, HTML, SCSS, CSS, JS, Express.JS, PostgreSQL, tested with React Testing Library}}{}
+          \resumeItemListStart
+            \resumeItem{Replicated Steam’s website, the largest video game retailer for PC games. Users can browse for games and discounted games; add games to their cart; create, edit, delete reviews for games; authenticate; upload profile picture and edit their profile. }
+            \resumeItem{Data is normalized to BCNF and is stored in PostgreSQL. Authentication is done with cookies, JWTs and refresh tokens. Used security practices against XSS / CSRF attacks.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://blizzard-roan.vercel.app/}{\underline{Blizzard}} } $-$ \fontseries{b}\selectfont{ React, React Spring, Redux, Typescript; HTML, SCSS, CSS, JS, tested with React Testing Library}}{}
+          \resumeItemListStart
+            \resumeItem{Replicated Blizzard‘s website, known for publishing games like Call of Duty and World of Warcraft. Users can view pages for each game.  Used React Spring to create physics-based animations like accordion, image parallax, and card flip. }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://kijiji-project.herokuapp.com/}{\underline{Kijiji}}  } $-$ \fontseries{b}\selectfont{ React, React Spring, Redux, Typescript; HTML, SCSS, CSS, JS, tested with React Testing Library}}{}
+          \resumeItemListStart
+            \resumeItem{Replicated Kijiji’s website. Users can create, edit, and delete their listing; upload a display picture to their listings, search listings based on category and location; view personally created listings; authenticate.  }
+             \resumeItem{Data is normalized to BCNF and is stored in PostgreSQL.  Authentication is done with cookies, JWTs and refresh tokens. Used security practices against XSS / CSRF attacks.   }
+          \resumeItemListEnd         
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React, Next.js, React-Spring, Redux, Typescript, React- Testing-Library, Enzyme, Jest, HTML, SCSS, BEM, CSS, Bootstrap, JS, Figma, Lighthouse, axe, Java, Python, Android Studio } \\
+     \textbf{Backend}{: Authentication, Database Normalization, Docker, CI/CD, Node.js, Express.js, PostgreSQL, MongoDB, GraphQL, Liquibase} \\
+     \textbf{Tools}{: Git, AWS, Gitlab, Azure DevOps, TravisCI, GitHub Actions, Shopify, Microsoft Teams, Slack, Heroku, Vercel} \\
+  
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
