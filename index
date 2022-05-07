@@ -78,8 +78,17 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
     %   \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6.5pt}
 }
+
+\newcommand{\education}[4]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
@@ -130,9 +139,9 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelor of Science, Computer Science,  Wilfrid Laurier University (CS GPA: 3.9/4 ) }{Waterloo, ON}
-   
+    \education
+      {Wilfrid Laurier University (Computer Science GPA: 3.9/4 ) }{Waterloo, ON}{Honours Bachelor of Science, Computer Science} {Sep 2018 - Present}
+      
   \resumeSubHeadingListEnd
 
 
@@ -145,7 +154,7 @@
       \resumeItemListStart
         \resumeItem{Collaborated with team for ideas, business plan, marketing plan, and engineering to create a platform for people to collaborate with \fontseries{b}\selectfont {GitHub Actions, Next.js, React-Spring, Typescript, HTML, SCSS, BEM. CSS, JS, Express.js, PostgreSQL, Liquibase, Figma, Lighthouse, axe.} }
         \resumeItem{Collaborated with mentors in accelerator to challenge decisions, address market research and pivot on ideas. }
-        \resumeItem{Used \textbf{Git and GitHub Actions} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+        \resumeItem{Used \textbf{Git and GitHub Actions} to conduct code reviews, raised pull requests, pushed code, and operate CI/CD. }
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -159,12 +168,12 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Habanero $|$ Toronto, ON -- Frontend Software Developer}{Sep. 2018 -- Present}
+      {Habanero $|$ Toronto, ON -- Frontend Software Developer}{Sep 2021 -- Jan 2022}
     
       \resumeItemListStart
         \resumeItem{Collaborated with design, operations and engineering team to develop a web application for over a dozen of clients with \fontseries{b}\selectfont {Azure DevOps, React, React-Spring, Typescript, HTML, SCSS, BEM, CSS, JS, Figma, Lighthouse, axe.} }
         \resumeItem{Involved in agile methodology that included biweekly scrum, backlog refinement, check-ins, QA, and retrospective.}
-        \resumeItem{Used \textbf{Git and Azure} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+        \resumeItem{Used \textbf{Git and Azure DevOps} to conduct code reviews, raised pull requests, pushed code, and operate CI/CD. }
     \resumeItemListEnd
 
     \resumeSubheading
@@ -173,7 +182,7 @@
       \resumeItemListStart
         \resumeItem{Collaborated with design, operations and engineering team to develop a Shopify application that automates sales for Shopify stores with over hundreds of products and users with \fontseries{b}\selectfont { GitLab, React, Redux, Typescript, PostgreSQL, GraphQL, Express.js, Docker, HTML, SCSS, BEM, CSS, JS, Lighthouse, axe.} }
         \resumeItem{Involved in agile methodology that included biweekly sprints, backlog refinement and daily stand-ups. }
-        \resumeItem{Used \textbf{Git and Gitlab} to conduct code reviews, raised pull requests, pushed code, and operate a CI/CD pipeline. }
+        \resumeItem{Used \textbf{Git and Gitlab} to conduct code reviews, raised pull requests, pushed code, and operate CI/CD. }
       \resumeItemListEnd
       
     \resumeSubheading
